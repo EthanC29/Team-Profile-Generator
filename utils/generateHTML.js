@@ -1,10 +1,4 @@
-const generateIndex = employeeArray => {
-    let employeeProfilesHTML = '';
-    
-    for (i = 0; i < employeeArray.length; i++) {
-        employeeProfilesHTML.concat(employeeArray[i])
-    }
-    
+const generateIndex = employeeString => {
     return`
     <!DOCTYPE html>
     <html lang="en">
@@ -22,18 +16,10 @@ const generateIndex = employeeArray => {
             <h1>My Team</h1>
         </header>
         <main>
-            ` + employeeProfilesHTML + `
+            ` + employeeString + `
         </main>
     </body>
     `
 }
 
 module.exports = { generateIndex }
-
-
-
-
-
-
-
-module.exports = { generateIndex };
