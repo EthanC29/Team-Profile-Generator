@@ -1,16 +1,11 @@
-const fs = require('fs');
 const Profiles = require('./lib/Profile');
-const generateHTML = require ("./utils/generateHTML.js")
+const { generateIndex } = require('./utils/generateHTML.js')
+const { writeFile, copyFile } = require
 
 const team = new Profiles().initializeProfile();
 
-function writeToFile(data) {
-    fs.writeFile('./dist/index.html', generateHTML(data), err => {
-        if (err) throw err;
-        console.info('Team Profile complete!')
-    });
-}
+const content = generateIndex(team.employees)
 
-const content = generateHTML.generateIndex(team.employees)
+writeFile(content);
 
-writeToFile(teamProfile);
+copyFile();

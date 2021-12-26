@@ -1,6 +1,4 @@
 const fs = require('fs');
-const Profiles = require('./lib/Profile');
-const generateHTML = require ("./utils/generateHTML.js")
 
 // writing files
 const writeFile = fileContent => {

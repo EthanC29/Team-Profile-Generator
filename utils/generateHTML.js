@@ -1,12 +1,10 @@
-const fs = require('fs');
-const Manager = require('../lib/Manager')
-const Engineer = require('../lib/Engineer')
-const Intern = require('../lib/Intern')
-const Profiles = require('./lib/Profile');
-
-const team = new Profiles().initializeProfile();
-
 const generateIndex = employeeArray => {
+    let employeeProfilesHTML = '';
+    
+    for (i = 0; i < employeeArray.length; i++) {
+        employeeProfilesHTML.concat(employeeArray[i])
+    }
+    
     return`
     <!DOCTYPE html>
     <html lang="en">
@@ -24,11 +22,13 @@ const generateIndex = employeeArray => {
             <h1>My Team</h1>
         </header>
         <main>
-
+            ` + employeeProfilesHTML + `
         </main>
     </body>
     `
 }
+
+module.exports = { generateIndex }
 
 
 
