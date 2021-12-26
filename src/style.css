@@ -1,0 +1,44 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    height: 50px;
+    background-image: linear-gradient(right, purple, maroon);
+    color: white;
+    padding: 15px auto;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 25px;
+}
+
+.profile{
+    margin: 20px;
+}
+
+.top {
+    background-color: #4040a1;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.bot {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.info {
+    padding: 10px;
+    margin: 5px;
+}
+
+.info p {
+    text-align: left;
+}

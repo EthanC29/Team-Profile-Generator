@@ -2,7 +2,7 @@ const fs = require('fs');
 const Profiles = require('./lib/Profile');
 const generateHTML = require ("./utils/generateHTML.js")
 
-new Profiles().initializeProfile();
+const team = new Profiles().initializeProfile();
 
 function writeToFile(data) {
     fs.writeFile('./dist/index.html', generateHTML(data), err => {
@@ -10,5 +10,7 @@ function writeToFile(data) {
         console.info('Team Profile complete!')
     });
 }
+
+const content = generateHTML.generateIndex(team.employees)
 
 writeToFile(teamProfile);
