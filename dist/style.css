@@ -21,29 +21,37 @@ main {
 
 .profile{
     margin: 20px;
-    width: 300px;
-    height: 500px;
 }
 
 .top {
+    height: 150px;
+    width: 260px;
     background-color: #4040a1;
     color: white;
     font-weight: bolder;
-    padding: 20px;
+    padding: 5px 20px;
     border-radius: 15px 15px 0 0;
 }
 
 .bot {
+    height: 200px;
+    width: 260px;
     background-color: whitesmoke;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 0 0 15px 15px;
 }
 
 .info {
-    padding: 10px;
+    padding: 1px 10px;
     margin: 5px;
+    background-color: white;
 }
 
 .info p {
     text-align: left;
+}
+
+h2, h3 {
+    text-align: center;
+    vertical-align: middle;
 }
